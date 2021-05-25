@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:layout_margin="@dimen/dimen_10dp"
+    android:orientation="vertical"
+    tools:context=".rhs.feature.CreateVehicleProfileFragment">
+
+    <TextView
+        android:id="@+id/tvVehNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_5dp"
+        android:padding="@dimen/dimen_5dp"
+        android:text="@string/vehicle_number"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_medium" />
+
+    <EditText
+        android:id="@+id/etVehNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_edit_box"
+        android:imeOptions="actionNext"
+        android:padding="@dimen/dimen_10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:layout_marginBottom="@dimen/dimen_5dp"
+        android:padding="@dimen/dimen_5dp"
+        android:text="Vehicle Type"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_medium" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbTwoWheeler"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="2W"
+            android:checked="true"
+            android:textSize="@dimen/font_medium" />
+
+        <RadioButton
+            android:id="@+id/rbFourWheeler"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="4W"
+
+            android:textSize="@dimen/font_medium" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+
+            android:src="@drawable/ic_arrow_forward" />
+    </FrameLayout>
+</LinearLayout>

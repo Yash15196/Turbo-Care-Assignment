@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".rhs.feature.VehicleSumaryFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".3"
+        android:background="@color/purple_500"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvVehBrand"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tvVehNo"
+            android:gravity="bottom"
+            android:layout_marginStart="@dimen/dimen_5dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_xxlarge"
+            android:textStyle="bold"
+            tools:text="CIVIC" />
+
+        <TextView
+            android:id="@+id/tvVehNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="bottom"
+            android:padding="@dimen/dimen_5dp"
+            android:layout_marginStart="@dimen/dimen_5dp"
+
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_medium"
+            tools:text="CIVIC" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".7"
+        android:orientation="vertical"
+        android:text="@string/hello_blank_fragment">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/titleMake"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:padding="@dimen/dimen_5dp"
+                    android:text="@string/make"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_medium" />
+
+                <TextView
+                    android:id="@+id/tvMake"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:padding="@dimen/dimen_5dp"
+                    android:text="@string/make"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_medium"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/titleModel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:padding="@dimen/dimen_5dp"
+                    android:text="@string/title_model"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_medium" />
+
+                <TextView
+                    android:id="@+id/tvModel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:padding="@dimen/dimen_5dp"
+                    android:text="@string/make"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_medium"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/titlefuel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:padding="@dimen/dimen_5dp"
+                    android:text="@string/title_fuel_type"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_medium" />
+
+                <TextView
+                    android:id="@+id/tvFuel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:padding="@dimen/dimen_5dp"
+                    android:text="@string/make"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_medium"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/titleTrans"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:padding="@dimen/dimen_5dp"
+                    android:text="Transmission"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_medium" />
+
+                <TextView
+                    android:id="@+id/tvTransmission"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:padding="@dimen/dimen_5dp"
+                    android:text="@string/make"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_medium"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fabNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+
+                android:layout_margin="@dimen/fab_margin"
+                android:src="@drawable/ic_check" />
+        </FrameLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
